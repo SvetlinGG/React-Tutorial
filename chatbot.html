@@ -11,12 +11,20 @@
 
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
-        const button = <button>Hello</button>;
-        const paragraph = <p>paragraph of text</p>;
+
+      function ChatInput(){
+        return (
+          <div>
+            <input />
+            <button>Send</button>
+          </div>
+        );
+      }
+        
+
         const div = (
             <div>
-                <p>paragraph of text { 2 + 2}</p>
-                <button>Hello</button>
+                {ChatInput()}
             </div>
             );
 
