@@ -71,8 +71,15 @@
           id: 'id4'
         }];
 
+        function sendMessage(){
+          console.log('send message');
+          
+        }
+
         return (
           <>
+
+          <button onClick={sendMessage}>Send Message</button>
               {chatMessages.map( (chatMessage) => {
                   return (
                     <ChatMessage
