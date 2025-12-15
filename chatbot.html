@@ -15,9 +15,9 @@
       function ChatInput(){
         return (
           <>
-            <input 
-            placeholder="Send a message to chatbot" 
-            size="30" 
+            <input
+            placeholder="Send a message to chatbot"
+            size="30"
             />
             <button>Send</button>
           </>
@@ -28,7 +28,7 @@
         // const message = props.message;
         // const sender = props.sender;
         // const { message, sender } = props;
-       
+
         // if ( sender === 'robot'){
         //   return (
         //     <div>
@@ -37,8 +37,8 @@
         //   </div>
         //   )
         // }
-        
-        
+
+
         return (
           <div>
             {sender === 'robot' && (
@@ -69,23 +69,23 @@
           sender: 'robot'
         }];
 
-        const chatMessageComponents = chatMessages.map( (chatMessage) => {
-            return (
-              <ChatMessage 
-              message={chatMessage.message}
-              sender={chatMessage.sender} 
-              />
-            );
-        });
+        
 
         return (
             <>
                 <ChatInput />
-                {chatMessageComponents}
+                {chatMessages.map( (chatMessage) => {
+                  return (
+                    <ChatMessage
+                    message={chatMessage.message}
+                    sender={chatMessage.sender}
+                    />
+                  );
+              })}
             </>
         )
       }
-        
+
 
 
 
