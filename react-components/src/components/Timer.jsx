@@ -10,6 +10,6 @@ export default function Timer(){
     }, 1000);
 
     return (
-        <h2>Timer: {time}</h2>
+        <h2>Timer: <input placeholder={time} /></h2>
     )
 }
