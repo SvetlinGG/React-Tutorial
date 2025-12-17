@@ -19,10 +19,16 @@
         border-radius: 10px;
         border-width: 1px;
         font-size: 15px;
+
+        flex-grow: 1;
       }
 
       .chat-input-container {
         display: flex;
+      }
+
+      .app-container {
+        max-width: 600px;
         
       }
     </style>
@@ -167,7 +173,7 @@
         
 
         return (
-            <>
+            <div className="app-container">
                 <ChatInput
                  chatMessages={chatMessages}
                  setChatMessages={setChatMessages}
@@ -176,7 +182,7 @@
                  chatMessages={chatMessages}
 
                 />
-            </>
+            </div>
         )
       }
 
