@@ -12,12 +12,36 @@
     <script src="https://unpkg.com/supersimpledev/babel.js"></script>
     <script type="text/babel">
     
+    function Clicked(){
+        const [count, setCount] = React.useState(0);
+
+        function setCounter(){
+            setCount((current) => {
+                const newVal = current + 1;
+                console.log(newVal);
+                return newVal;
+            })
+        }
+
+
+        return (
+            <>
+            <button onClick={setCounter}>Clicked {count} times</button>
+            </>
+        )
+    }
+            
+        
+
+        
+        
+    
     
 
     function App(){
         return(
             <>
-            
+            <Clicked />
             </>
         )
     }
