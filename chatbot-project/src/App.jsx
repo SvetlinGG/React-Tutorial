@@ -1,47 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
-import { Chatbot } from 'supersimpledev';
+import { ChatInput } from './components/ChatInput';
+import { ChatMessage } from './components/ChatMessage';
 import './App.css';
 
 
 
-function ChatMessage({message, sender}){
-  // const message = props.message;
-  // const sender = props.sender;
-  // const { message, sender } = props;
 
-  // if ( sender === 'robot'){
-  //   return (
-  //     <div>
-  //       <img src="robot.png" width="50" />
-  //       {message}
-  //   </div>
-  //   )
-  // }
-
-
-  return (
-    <div className={
-      sender ==='user' 
-        ? 'chat-message-user' 
-        : 'chat-message-robot'
-      }>
-      {sender === 'robot' && (
-        <img src="../public/robot.png"
-        className="chat-message-profile" 
-         />
-      )}
-      <div className="chat-message-text">
-        {message}
-      </div>
-      
-      {sender === 'user' && (
-        <img src="../public/user.png" 
-        className="chat-message-profile" 
-        />
-      )}
-    </div>
-  )
-}
 
 function ChatMessages({
   chatMessages}){
