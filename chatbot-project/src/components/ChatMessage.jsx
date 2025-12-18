@@ -38,3 +38,4 @@ export function ChatMessage({message, sender}){
       </div>
     )
   }
+  export default ChatMessage;

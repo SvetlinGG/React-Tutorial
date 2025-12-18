@@ -1,15 +1,10 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
 import { ChatInput } from './components/ChatInput';
 import { ChatMessage } from './components/ChatMessage';
 import { ChatMessages } from './components/ChatMessages';
 import './App.css';
 
-
-
-
 function App(){
-
-
   const [chatMessages, setChatMessages] = useState([{
 
     message: 'hello chatbot',
@@ -32,10 +27,6 @@ function App(){
   // const [chatMessages, setChatMessages] = array;
   // const chatMessages = array[0];
   // const setChatMessages = array[1];
-
-  
-
-  
 
   return (
       <div className="app-container">

@@ -29,3 +29,4 @@ export function ChatMessages({
         );
         
   }
+  export default ChatMessages;
