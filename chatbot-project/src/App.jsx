@@ -73,7 +73,7 @@ function ChatMessage({message, sender}){
         : 'chat-message-robot'
       }>
       {sender === 'robot' && (
-        <img src="robot.png"
+        <img src="../public/robot.png"
         className="chat-message-profile" 
          />
       )}
@@ -82,7 +82,7 @@ function ChatMessage({message, sender}){
       </div>
       
       {sender === 'user' && (
-        <img src="user.png" 
+        <img src="../public/user.png" 
         className="chat-message-profile" 
         />
       )}
@@ -92,7 +92,7 @@ function ChatMessage({message, sender}){
 
 function ChatMessages({
   chatMessages}){
-    const chatMessagesRef = React.useRef(null);
+    const chatMessagesRef = useRef(null);
 
     useEffect(() => {
      const containerElem = chatMessagesRef.current;
