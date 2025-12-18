@@ -177,10 +177,17 @@
         )
       }
 
-      function ChatMessages({chatMessages}){
+      function ChatMessages({
+        chatMessages}){
+          const chatMessagesRef = React.useRef(null);
+
+          React.useEffect(() => {
+            
+          }, [chatMessages]);
 
         return (
-          <div className="chat-messages-container">
+          <div className="chat-messages-container"
+                ref={chatMessagesRef}>
               {chatMessages.map( (chatMessage) => {
                   return (
                     <ChatMessage
