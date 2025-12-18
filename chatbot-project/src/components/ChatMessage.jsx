@@ -22,7 +22,7 @@ export function ChatMessage({message, sender}){
           : 'chat-message-robot'
         }>
         {sender === 'robot' && (
-          <img src="../public/robot.png"
+          <img src="../../public/robot.png"
           className="chat-message-profile" 
            />
         )}
@@ -31,7 +31,7 @@ export function ChatMessage({message, sender}){
         </div>
         
         {sender === 'user' && (
-          <img src="../public/user.png" 
+          <img src="../../public/user.png" 
           className="chat-message-profile" 
           />
         )}
